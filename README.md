@@ -18,6 +18,7 @@ movie-recommender/
 ├── app.py # Main Streamlit app
 ├── recommender.py # Core logic (data loading, SVD training, hybrid filtering)
 ├── utils.py # TMDb poster fetcher and background overlay
+├── MRS_hybrid.py # overall code in a single file(optional)
 ├── data/
 │ ├── movies.csv # Movie metadata (title, genres, year)
 │ └── ratings.csv # User ratings
