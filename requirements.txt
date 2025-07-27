@@ -1,3 +1,7 @@
+streamlit
+pandas
+requests
+scikit-surprise
 g++
 python3-dev
 build-essential
