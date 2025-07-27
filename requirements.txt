@@ -3,6 +3,3 @@ pandas
 requests
 scikit-surprise
 scikit-learn
-g++
-python3-dev
-build-essential
