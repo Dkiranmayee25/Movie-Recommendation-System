@@ -7,12 +7,13 @@ import requests
 import logging 
 import time
 import re
+import os
 import base64
 from surprise import SVD, Dataset, Reader
 from surprise.model_selection import train_test_split
 
 # === TMDb API Key ===
-TMDB_API_KEY = "725ff13f46d3ee977ebb76000ab184d3"
+TMDB_API_KEY = st.secrets["725ff13f46d3ee977ebb76000ab184d3"]
 
 # === Page Config ===
 st.set_page_config(page_title="Movie Recommender", layout="wide")
