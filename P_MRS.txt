@@ -1,0 +1,21 @@
+import pandas as pd
+
+# Load the movies dataset
+try:
+    movies = pd.read_csv('movies.csv', encoding='ISO-8859-1', on_bad_lines='skip')
+except FileNotFoundError:
+    movies = pd.read_csv("C:/Users/kiran/Downloads/movies.csv", encoding='ISO-8859-1', on_bad_lines='skip')
+
+# === Step 1: Check for missing values ===
+print("Missing values before cleanup:")
+print(movies.isnull().sum())
+
+# === Step 2: Drop rows with missing values ===
+movies.dropna(inplace=True)
+
+# === Step 3: Convert 'genres' column to list ===
+if 'genres' in movies.columns:
+    movies['genres'] = movies['genres'].apply(lambda x: x.split('|') if x != '(no genres listed)' else [])
+else:
+    print("Warning: 'genres' column not found!")
+
