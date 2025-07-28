@@ -41,4 +41,4 @@ Ensure:
   ratings.csv contains: user_id, movie_id, rating, timestamp
 
 📸 Screenshot
-<img width="1297" height="640" alt="2025-07-26" src="https://github.com/user-attachments/assets/a571e89a-feaa-4bfa-b4e5-46b7893ad5ba" />
+<img width="1276" height="618" alt="2025-07-28" src="https://github.com/user-attachments/assets/1d7ac589-29a7-47c7-97a7-8eb00d0da23a" />
