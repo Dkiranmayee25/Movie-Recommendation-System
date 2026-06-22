@@ -200,7 +200,14 @@ if st.button("🎯 Recommend Movies"):
         col1, col2 = st.columns([1, 4])
         with col1:
             if row['poster_url']:
-                st.image(row['poster_url'], width=120)
+                poster_url = row.get('poster_url', '')
+                if pd.notna(poster_url) and isinstance(poster_url, str) and poster_url.startswith("http"):
+                    st.image(poster_url, width=120)
+                else:
+                    st.image(
+                        "https://via.placeholder.com/120x180?text=No+Poster",
+                        width=120
+                    )
             else:
                 st.markdown("No poster")
         with col2:
