@@ -21,7 +21,7 @@ from surprise.model_selection import train_test_split
 TMDB_API_KEY = "725ff13f46d3ee977ebb76000ab184d3"
 
 # === Page Config ===
-st.set_page_config(page_title="Movie Recommender", layout="wide")
+st.set_page_config(page_title="🎬Movie Recommender", layout="wide")
 
 # === Theme Toggle ===
 theme = st.radio("Choose Theme:", ["Dark", "Light", "Cozy"], horizontal=True)
